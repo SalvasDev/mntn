@@ -1,0 +1,49 @@
+// @include fface('Gilroy', 'Gilroy-Medium', 'fonts/', 'Gilroy-medium', 500, normal);
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('fonts/Chronicle-Display-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('fonts/Chronicle-Display-Black.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@import 'scss/base/normalize';
+@import 'scss/base/mixins';
+@import 'scss/base/variables';
+@import 'scss/base/globals';
+
+@import 'mntn.scss';
+@import 'scss/layout/header';
+@import 'scss/layout/hero';
+@import 'scss/layout/socialbar';
+@import 'scss/layout/indexbar';
+@import 'scss/layout/article';
+@import 'scss/layout/sidemenu';
+@import 'scss/layout/footer';

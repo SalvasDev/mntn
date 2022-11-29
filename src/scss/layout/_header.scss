@@ -1,0 +1,98 @@
+.header__section {
+    position: absolute;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;    
+    width: 100%;
+    padding: 0 8rem;
+    z-index: 1;
+
+    @include mob__490 {
+       padding: 0 2rem;
+    }
+}
+
+.logo {
+    font-family: 'Chronicle';
+    font-weight: 600;
+    font-size: 32px;
+    align-self: center;
+    margin-top: .5rem;
+    
+}
+
+.account__btn {
+    color: $gral__color;
+    display: flex;
+    gap: 1rem;    
+    align-items: center;
+    font-size: 1.7rem;
+    cursor: pointer;
+    align-self: center;
+
+    &:hover {
+            transition: all ease 400ms;
+            opacity: .5;
+        }
+
+}
+
+.nav {
+    font-size: 1.8rem;
+    display: flex;
+    align-self: center;
+    gap: 4rem;
+
+    @include tablet__768 {
+            display: none;
+        }
+
+    .nav__item:hover {
+        transition: all ease 400ms;
+        opacity: .5;
+    }    
+}
+
+.container__menu {
+    display: none;
+    align-self: center;
+    margin-top: 1rem;
+    height: 100%;
+    z-index: 30;
+
+    @include tablet__768 {
+        display: flex;
+    }
+}
+
+
+.btn__burg {
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .6rem;
+    cursor: pointer;
+    display: flex;
+
+    @include tablet__768 {
+        display: flex;
+    }
+
+    div {
+        background: white;
+        height: 2px;
+        width: 100%;
+        border-radius: 5px;
+        transition: all .5s;
+        transform-origin: left;
+
+        @include mob__375 {
+            width: 100%;
+
+        }
+    }
+
+}

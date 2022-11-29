@@ -1,0 +1,31 @@
+.social__bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 8.2rem;
+    top: 35.9rem;
+    gap: 3rem;
+    z-index: 5;
+
+    img:hover {
+        filter: brightness(0) saturate(100%) invert(96%) sepia(52%) saturate(990%) hue-rotate(317deg) brightness(95%) contrast(108%);
+    }
+  
+ 
+    @include desk__1200 {
+        display: none;
+    }
+}
+
+.follow {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 700;
+    font-size: 1.8rem;
+      &:hover {
+        transition: all ease 400ms;
+        opacity: 0.5;
+    }
+}
+
+

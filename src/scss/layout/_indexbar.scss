@@ -1,0 +1,49 @@
+.index__bar {
+    position: fixed;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    z-index: 10;
+    top: 32.6rem;
+    right: 8rem;
+    
+    @include desk__1200 {
+       display: none;
+    }
+
+
+}
+
+.progress__bar {
+    height: 23rem;
+    width: .3rem;
+    background-color: $gral__color;
+    opacity: 0.5;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    text-align: right;
+    gap: 3.2rem;
+    
+}
+
+
+.selected {
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: -2.5rem;
+        left: 7.3rem;
+        height: 350%;
+        width: 3px;
+        background-color: $accent__color;
+        opacity: 1;
+        transition: all 200ms ease;
+    }
+
+} 

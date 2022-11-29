@@ -1,0 +1,62 @@
+// @mixin fface($family, $file, $weight: normal, $style: normal) {
+
+//     @font-face {
+//         font-family: $family;
+//         src: url('fonts/'+$file+'.woff') format('woff');
+//         font-weight: $weight;    
+//         font-style: $style;
+//     }         
+// }
+
+
+@mixin desk__1440 {
+    @media(max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin desk__1200 {
+    @media(max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin desk__1080 {
+    @media(max-width: 1080px) {
+        @content;
+    }
+}
+
+
+@mixin desk__900 {
+    @media(max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin tablet__768 {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mob__580 {
+    @media(max-width: 580px) {
+        @content;
+    }
+}
+
+@mixin mob__490 {
+    @media(max-width: 490px) {
+        @content;
+    }
+}
+
+@mixin mob__375 {
+    @media(max-width: 375px) {
+        @content;
+    }
+
+
+
+}
