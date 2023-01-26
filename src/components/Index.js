@@ -83,7 +83,6 @@ useEffect(()=> {
  },[ind])
 
 
-
  useEffect(()=> {
   const observer = new IntersectionObserver( function(entries) {
 
@@ -117,8 +116,6 @@ useEffect(()=> {
     var identi = '#'+newInd
 
   return (
-
-
         <a 
             href={identi}
             className= { btnSelected }

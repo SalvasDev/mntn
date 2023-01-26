@@ -49,6 +49,10 @@
     background-color: $accent__color;
 }    
 
+.title {
+    animation-delay: .5s;
+}
+
 .title__text {
     font-family: $font__sec;
     font-size: calc(60px + (88 - 60) * ((100vw - 375px) / (1920 - 375)));
